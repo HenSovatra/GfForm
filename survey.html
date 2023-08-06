@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GirlFriend</title>
+    <link rel="icon" href="heart.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <form action="" id="GfForm">
+        <p class="alert">Submited</p>
+        <h1>GirlFriend Survey</h1>
+        <br>
+        <p>What Is Your Name?</p>
+        <p><input id="name" type="text" placeholder="Put your name here baby"></p>
+        <br>
+        <p>How old are you?</p>
+        <p><input id="age" type="text" placeholder="Age Please"></p>
+        <div class="eighteen">
+        <input id="iam" type="checkbox" name="title" value="iam">
+        <label for="iam" class="iam">I'm Above 18 Years Old</label>
+        </div>
+        <br>
+        <br>
+        <p>Level of Cuteness</p>
+        <p class="example">Example: Super Cute, So Cute, Normal Cute</p>
+        <div class="cute">
+        <input id="sscute" type="radio" name="cuteness" value="sscute">
+        <label id="cute" for="sscute">Super Cute</label>
+        <br>
+        <input id="scute" type="radio" name="cuteness" value="scute">
+        <label id="cute" for="scute">So Cute</label>
+        <br>
+        <input id="ncute" type="radio" name="cuteness" value="ncute">
+        <label id="cute" for="ncute">Cute</label>
+        </div>
+        <br>
+        <p>Do You Love Me?</p>
+        <div class="dylm">
+            <input id="yes" type="radio" name="dylm" value="yes">
+            <label id="cute" for="yes">Yes</label>
+            <br>
+            <input id="no" type="radio" name="dylm" value="no">
+            <label id="cute" for="no">No</label>
+            <br>  
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="db.js"></script>
+</body>
+</html>
